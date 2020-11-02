@@ -16,13 +16,15 @@ The appropriate VS Code extensions are copied into the container (`ElixirLS` and
 
 ### Steps to use with VS Code
 
+- Make sure you have Docker installed locally on your development machine.
+
 - Install the VS Code remote container extension:
 
     `code --install-extension ms-vscode-remote.remote-containers`
 
 - Copy the appropriate .devcontainer directory and its contents into your project
 
-- Open your project directory in VS Code
+- Open your project directory in VS Code (e.g., `code .`)
 
 - When prompted, reload the project and click "Reopen in Container":
 
