@@ -1,7 +1,11 @@
 {
   "dockerFile": "Dockerfile",
-  "extensions": ["JakeBecker.elixir-ls"],
+  "extensions": [
+    "JakeBecker.elixir-ls",
+    "samuel-pordeus.elixir-test"
+    ],
   "settings": { 
 		"terminal.integrated.shell.linux": "/usr/bin/zsh"
-	}
+	},
+  "postCreateCommand": "mix deps.get"
 }
