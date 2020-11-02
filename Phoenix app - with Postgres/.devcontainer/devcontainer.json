@@ -1,0 +1,14 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "extensions": [
+    "JakeBecker.elixir-ls",
+    "samuel-pordeus.elixir-test"
+  ],
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
+  },
+  "forwardPorts": [4000, 5432],
+  "postCreateCommand": "mix deps.get && npm i --prefix assets && mix ecto.create"
+}

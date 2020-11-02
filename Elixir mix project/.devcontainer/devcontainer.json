@@ -1,0 +1,7 @@
+{
+  "dockerFile": "Dockerfile",
+  "extensions": ["JakeBecker.elixir-ls"],
+  "settings": { 
+		"terminal.integrated.shell.linux": "/usr/bin/zsh"
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "dockerFile": "Dockerfile",
+  "extensions": ["JakeBecker.elixir-ls"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
+  },
+  "forwardPorts": [4000],
+  "postCreateCommand": "mix deps.get && npm i --prefix assets"
+}
