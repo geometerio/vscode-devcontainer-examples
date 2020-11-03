@@ -10,5 +10,3 @@ RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/inst
 # Other developer tools
 RUN apt-get install -y neovim
 
-CMD ["iex", "-S", "mix"]
-

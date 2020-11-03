@@ -21,5 +21,3 @@ RUN apt-get install -y neovim
 
 # Move aliases to a separate file?
 RUN echo "alias s='iex -S mix phx.server'" >> /root/.zshrc
-
-CMD ["iex", "-S", "mix", "phx.server"]
