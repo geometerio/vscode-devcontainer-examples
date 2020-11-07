@@ -6,8 +6,12 @@ services:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
-      # args:
-      #   VARIANT: 3
+      args:
+        DEV_ELIXIR_DOCKER_IMAGE: $DEV_ELIXIR_DOCKER_IMAGE
+        PHOENIX_VERSION: $PHOENIX_VERSION
+        NODE_MAJOR_VERSION: $NODE_MAJOR_VERSION
+        HEX_PRIVATE_ORG: $HEX_PRIVATE_ORG
+        HEX_PRIVATE_ORG_READ_ONLY_KEY: $HEX_PRIVATE_ORG_READ_ONLY_KEY
 
     volumes:
       - ..:/workspace:cached
