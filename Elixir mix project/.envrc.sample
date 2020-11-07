@@ -1,0 +1,3 @@
+export DEV_ELIXIR_DOCKER_IMAGE=elixir:1.11.1
+export HEX_PRIVATE_ORG=your_hex_org_name
+export HEX_PRIVATE_ORG_READ_ONLY_KEY=your_hex_org_private_key
