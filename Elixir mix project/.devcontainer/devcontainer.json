@@ -7,5 +7,12 @@
   "settings": { 
 		"terminal.integrated.shell.linux": "/usr/bin/zsh"
 	},
-  "postCreateCommand": "mix deps.get"
+  "build": {
+    "args": {
+      "DEV_ELIXIR_DOCKER_IMAGE": "${localEnv:DEV_ELIXIR_DOCKER_IMAGE}",
+      "HEX_PRIVATE_ORG": "${localEnv:HEX_PRIVATE_ORG}",
+      "HEX_PRIVATE_ORG_READ_ONLY_KEY": "${localEnv:HEX_PRIVATE_ORG_READ_ONLY_KEY}"
+    }
+  },
+  "postCreateCommand": "mix deps.get && mix compile"
 }

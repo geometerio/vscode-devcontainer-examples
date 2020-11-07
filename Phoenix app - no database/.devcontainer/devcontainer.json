@@ -8,12 +8,14 @@
     "terminal.integrated.shell.linux": "/usr/bin/zsh"
   },
   "forwardPorts": [4000],
-  "build": { "args": {
-    "DEV_ELIXIR_DOCKER_IMAGE": "${localEnv:DEV_ELIXIR_DOCKER_IMAGE}",
-    "PHOENIX_VERSION": "${localEnv:PHOENIX_VERSION}",
-    "NODE_MAJOR_VERSION": "${localEnv:NODE_MAJOR_VERSION}",
-    "HEX_PRIVATE_ORG": "${localEnv:HEX_PRIVATE_ORG}",
-    "HEX_PRIVATE_ORG_READ_ONLY_KEY": "${localEnv:HEX_PRIVATE_ORG_READ_ONLY_KEY}"
-  } },
+  "build": {
+    "args": {
+      "DEV_ELIXIR_DOCKER_IMAGE": "${localEnv:DEV_ELIXIR_DOCKER_IMAGE}",
+      "PHOENIX_VERSION": "${localEnv:PHOENIX_VERSION}",
+      "NODE_MAJOR_VERSION": "${localEnv:NODE_MAJOR_VERSION}",
+      "HEX_PRIVATE_ORG": "${localEnv:HEX_PRIVATE_ORG}",
+      "HEX_PRIVATE_ORG_READ_ONLY_KEY": "${localEnv:HEX_PRIVATE_ORG_READ_ONLY_KEY}"
+    }
+  },
   "postCreateCommand": "mix deps.get && mix compile"
 }
