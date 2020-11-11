@@ -1,8 +1,9 @@
 ARG DEV_ELIXIR_DOCKER_IMAGE
 FROM $DEV_ELIXIR_DOCKER_IMAGE
 
+ARG ADDITIONAL_LINUX_PACKAGES=""
 RUN apt-get update \
-    && apt-get install -y apt-utils
+    && apt-get install -y apt-utils $ADDITIONAL_LINUX_PACKAGES
 
 # Phoenix requirements:
 ARG PHOENIX_VERSION
